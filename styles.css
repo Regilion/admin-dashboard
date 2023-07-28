@@ -7,7 +7,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    /* grid-template-columns: 1fr 4fr; */
+    grid-template-columns: 250px 4fr;
     height: 100%;
 }
 
@@ -17,6 +18,10 @@ article p, span div p:nth-of-type(2) {
 
 svg#dashboard {
     width: 30px;
+}
+
+h3 svg, h1 svg {
+    margin-right: 10px;
 }
 
 svg {
@@ -41,17 +46,22 @@ header {
 label[for="search"] {
     display: grid;
     grid-template-columns: 30px 1fr;
+    align-items: center;
 }
 
 #search {
-    width: 50%;
-    height: 20px;
+    width: 80%;
+    height: 30px;
     padding: 5px;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #e7e5e4;
 
+}
+
+#search:focus {
+    border: 1px solid #0ea5e9;
 }
 
 #nav-top {
@@ -117,12 +127,21 @@ aside {
     gap: 30px;
 }
 
+#sidebar-fixed-content h1 {
+    display: flex;
+    align-items: center;
+}
+
 #sidebar-user h3 {
     margin: 20px 0;
+    display: flex;
+    align-items: center;
 }
 
 #sidebar-help h3 {
     margin: 20px 0;
+    display: flex;
+    align-items: center;
 }
 
 main {
